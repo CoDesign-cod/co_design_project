@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.yellow,
       ),
-      home: signInPage(),
+      debugShowCheckedModeBanner: false,
+      home:  signInPage(),
     );
   }
 }
