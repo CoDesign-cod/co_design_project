@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'pages/home_page.dart';
 import 'pages/sign_in_page.dart';
 
 
@@ -17,10 +18,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.grey,
       ),
       debugShowCheckedModeBanner: false,
-      home:  signInPage(),
+      home: homePage(),
     );
   }
 }

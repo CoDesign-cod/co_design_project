@@ -7,7 +7,11 @@ class homePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Co-Design'),
+        leading:Icon(Icons.menu) ,
+        title: Image(image: AssetImage('assets/images/co_design_logo_for_app_bar_removed_background.png'),),
+        actions: [
+          Icon(Icons.notifications),
+        ],
       ),
     );
   }
