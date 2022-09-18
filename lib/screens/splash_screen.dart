@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:codesign_app/pages/sign_in_page.dart';
+import 'package:codesign_app/shared/resources/views_manager.dart';
 import 'package:flutter/material.dart';
 
 import '../shared/resources/app_constants.dart';
@@ -19,8 +19,7 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   void _goNext() {
-    Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => const SignInPage()));
+    ViewsManager.homeAfterSplash(context);
   }
 
   @override
