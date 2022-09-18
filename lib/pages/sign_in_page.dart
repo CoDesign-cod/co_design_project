@@ -10,12 +10,6 @@ class signInPage extends StatefulWidget {
 class _signInPageState extends State<signInPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children:[
-
-        ],
-      ),
-    );
+  return Scaffold();
   }
 }
