@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:codesign_app/shared/resources/image_assets.dart';
 import 'package:codesign_app/shared/resources/views_manager.dart';
 import 'package:flutter/material.dart';
 
@@ -33,8 +34,7 @@ class _SplashPageState extends State<SplashPage> {
     return Scaffold(
         // backgroundColor: ColorManager.primary,
         body: Center(
-      child: Image.asset(
-          "assets/images/co_design_logo_for_splash_screen_removed_background.png"),
+      child: Image.asset(AssetsManager.splashLogo),
     ));
   }
 
