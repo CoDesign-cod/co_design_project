@@ -1,12 +1,12 @@
+import 'package:codesign_app/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -17,8 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.grey,
       ),
       debugShowCheckedModeBanner: false,
-      home: homePage(),
+      home: const SplashPage(),
     );
   }
 }
-
