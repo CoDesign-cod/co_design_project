@@ -1,4 +1,5 @@
 import 'package:codesign_app/screens/splash_screen.dart';
+import 'package:codesign_app/shared/resources/routes_maneger.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,11 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
       debugShowCheckedModeBanner: false,
+      onGenerateRoute: RouteGenerator.getRoute,
+      // initialRoute: Routes.splashRout,
       home: const SplashPage(),
     );
   }
