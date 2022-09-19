@@ -1,4 +1,10 @@
+import 'package:codesign_app/pages/bottom_nav_bar_pages/cart.dart';
+import 'package:codesign_app/pages/bottom_nav_bar_pages/home.dart';
 import 'package:flutter/material.dart';
+
+import 'bottom_nav_bar_pages/profile.dart';
+import 'bottom_nav_bar_pages/search.dart';
+import 'bottom_nav_bar_pages/wallet.dart';
 
 class homePage extends StatefulWidget {
   const homePage({Key? key}) : super(key: key);
@@ -9,12 +15,19 @@ class homePage extends StatefulWidget {
 
 class _homePageState extends State<homePage> {
   int _currentIndex = 2;
+  List<Widget> _screenOptions = <Widget>[
+    Profile(),
+    Wallet(),
+    Home(),
+    Cart(),
+    Search(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Image(image: AssetImage('assets/images/co_design_logo_for_app_bar_removed_background.png') ,height: 100,),
+        title: Image(image: AssetImage('assets/images/co_design_logo_for_app_bar_removed_background.png') ,height: 104,width: 185,),
         actions: [
           IconButton(icon:Icon(Icons.notifications) , onPressed: (){}, ),
         ],
